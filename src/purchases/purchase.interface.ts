@@ -3,7 +3,7 @@ export interface PurchaseItem {
   quantity: number;
   price: number;
 }
-export interface Purchease {
+export interface Purchase {
   id: number;
   customerName: string;
   PurchaseDate: String;

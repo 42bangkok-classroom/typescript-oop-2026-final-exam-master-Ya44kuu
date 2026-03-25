@@ -3,7 +3,7 @@ import type { ApiResponse } from 'src/interfaces/response.interface';
 import { Purchease } from './purchase.interface';
 import { PurchaseService } from './purchase.service';
 
-@Controller('products')
+@Controller('purchases')
 export class PurchaseController {
   constructor(private readonly PurchaseService: PurchaseService) {}
   @Get()
@@ -12,7 +12,7 @@ export class PurchaseController {
     return {
       success: true,
       data: result,
-      message: 'Fetched products successfully',
+      message: 'Fetched purchases successfully',
     };
   }
 }

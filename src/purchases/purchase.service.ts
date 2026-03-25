@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Purchase } from './purchase.interface';
 import * as fs from 'fs';
-import { ApiResponse } from 'src/interfaces/response.interface';
 @Injectable()
 export class PurchaseService {
   findAll(): Purchase[] {
